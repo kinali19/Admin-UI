@@ -1,0 +1,49 @@
+.container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 5rem 10rem;
+}
+
+table {
+  width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+    tr:last-child td{
+          border-bottom: 0;
+    }
+
+    th,
+    td {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+
+      
+    }
+
+  th,td:last-child {
+    border-right: 0;
+  }
+
+  .pagination {
+    padding: 0.5rem;
+  }
+  .search-box input{width: 98%; padding: 10px; margin-bottom: 2rem;}
+
+  .pagination-block {margin-top: 2rem; display: flex; justify-content: space-between;}
+  .pagination-block .delte-btn{ border-radius: 25px; background-color: deeppink; border: none; color: #fff; font-weight: 700; padding: 1rem;}
+  .pagination-block button { cursor: pointer; padding: 10px 14px; margin: 0 10px; border-radius: 25px; border:none; font-weight: 700;}
+  .btn{background-color: transparent; border:none; cursor: pointer;}
+  .btn img{width: 20px;height: 20px; }
+  input[type="checkbox"]{width: 20px;height: 20px;}
+
+  /*responsive design*/
+  @media screen and (max-width: 991px) {
+    .container{padding: 10px;}
+    .search-box input{    padding: 15px 7px;}
+  }
